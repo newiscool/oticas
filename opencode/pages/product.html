@@ -1,0 +1,137 @@
+
+<div id="product-page">
+    <div class="produto-wrapper" itemscope itemtype="http://schema.org/Product">  
+        <section class="product__general-price-information price-shipping__block-bottom">
+            <div class="price-shipping__block">
+                <header>
+                    <li class="product-info__item">
+                        <span class="product-info__desc">{{ product.brand }}</span>
+                    </li>
+                    <h1 class="product__name hidden-xs hidden-sm">{{ product.name }}</h1>
+                    <ul class="product-info__list">
+                        <li class="product-info__item">
+                            <span class="product-info__title">SKU:</span>
+                            <span class="product-info__desc">{{ product.id }}</span>
+                        </li>
+                    </ul>
+                    {% if product.ranking %}
+                        <div class="product__rating-wrapper">
+                            <span class="product__rating__level--name">Avaliações deste produto:</span>
+                            <span class="product__rating__stars" data-stars-count="{{ product.ranking.rating }}"></span>
+                        </div>
+                    {% endif %}
+                    <form id="product__buy-form" method="post" data-app="product.buy-form"action="{{ links.cart_add ~ product.id }}">
+                        <div class="product-main__prices">
+                            <div id="preco" align="left">
+                                {{ productHelper.pricing() }}
+                                <div id="produto_nao_disp">
+                                    <input type="hidden" name="verifica_variacao" id="verifica_variacao" value="">
+                                    <input type="hidden" name="verifica_clientes_aguardando" id="verifica_clientes_aguardando" value="1">
+                                    <input type="hidden" name="verifica_estoque_venda" id="verifica_estoque_venda" value="">
+                                    <input type="hidden" name="verifica_variacao_dupla_valor" id="verifica_variacao_dupla_valor" value="0">
+                                    <input type="hidden" name="layout_variacao" id="layout_variacao" value="1">
+                                    <input type="hidden" name="define_radio_select" id="define_radio_select" value="">
+                                </div>
+                            </div>
+                            {% if product.available %}
+                            <div class="product__buy">
+                                <button type="submit" id="product__button--buy">Comprar</button>
+                            </div>
+                        {% endif %}
+                        </div>
+                        {% if productHelper.variants() %}
+                            <div class="product__variations">{{ productHelper.variants() }}</div>
+                        {% endif%}
+                        <div class="product__shipping">
+                            {{ productHelper.shipping() }}
+                        </div>
+                    </form>
+                </header>
+            <div class="social-midias">{{ productHelper.social() }}</div>
+        </div>
+        </section>  
+        <section class="container-right_block">            
+        <section class="product__general-information">
+            <div class="product__offer">
+                {% set percent = 100 - ( product.price_offer / product.price ) * 100 %}
+                <span>-{{ percent|number_format }}%</span>                            
+            </div>                              
+            <div class="product-img" id="visualBlock">
+                {{ productHelper.gallery() }}
+            </div>
+<!-- MOBILE PRICE -->
+            <form id="product__buy-form" method="post" data-app="product.buy-form"action="{{ links.cart_add ~ product.id }}" class="product-mobile__prices-block visibile-xs visibile-sm">
+                <div class="product-mobile__prices">
+                    <div id="preco" align="left">
+                        {{ productHelper.pricing() }}
+                        <div id="produto_nao_disp">
+                            <input type="hidden" name="verifica_variacao" id="verifica_variacao" value="">
+                            <input type="hidden" name="verifica_clientes_aguardando" id="verifica_clientes_aguardando" value="1">
+                            <input type="hidden" name="verifica_estoque_venda" id="verifica_estoque_venda" value="">
+                            <input type="hidden" name="verifica_variacao_dupla_valor" id="verifica_variacao_dupla_valor" value="0">
+                            <input type="hidden" name="layout_variacao" id="layout_variacao" value="1">
+                            <input type="hidden" name="define_radio_select" id="define_radio_select" value="">
+                        </div>
+                    </div>
+                    {% if product.available %}
+                    <div class="product__buy">
+                        <button type="submit" id="product__button--buy">Comprar</button>
+                    </div>
+                {% endif %}
+                </div>
+                {% if productHelper.variants() %}
+                    <div class="product__variations">{{ productHelper.variants() }}</div>
+                {% endif%}
+            </form>
+<!-- END MOBILE PRICE -->
+
+        </section>                          
+            {% if productHelper.bundle %}
+                <section class="product__bundle ">
+                    <h4 class="product__title">Compre Junto</h4>
+                    {{ productHelper.bundle }}
+                </section>
+            {% endif %}
+            <section id="ProdBlock" class="product__tabs col-xs-12 ">
+                <a name="formaPagto"></a>
+                <div id="descricao" class="prodBox dispblock">
+                    <div class="board">
+                        <h3 class="triger_btn-tabs">{{ productTabs.description.description }} </h3>
+                        <div class="board_htm description tabs_wrap">
+                            {{ product.description ? product.description : product.description_small }}
+                        </div>
+                    </div>
+                </div>
+                <div id="itensInclusos" class="prodBox dispblock">
+                    <h3 class="triger_btn-tabs">{{ productTabs.properties.description }} </h3>
+                    <div class="board tabs_wrap">
+                        {{ product.included_items }}
+                    </div>
+                </div>
+                <div id="coments" class="prodBox dispblock ">
+                    <h3 class="triger_btn-tabs">{{ productTabs.comments.description }} </h3>
+                    <div class="board tabs_wrap">
+                        {% element 'product/comments' %}
+                    </div>
+                </div>
+                <div id="coments" class="prodBox {{productTabs.custom.description }}">
+                    <h3 class="triger_btn-tabs">{{ productTabs.AdditionalTab8.description }} </h3>
+                    <div class="board ">
+                        {{ productTabs.custom.content }}
+                    </div>
+                </div>
+                {{ productTabs.downloads.content }}
+                <div data-app="product.payment-methods" id="formasPagto" class="prodBox dispblock" style="display:none;"></div>
+            </section>
+        </section>
+    </div>
+    {% if product.related_products %}
+        <section class="col-xs-12 product__related">
+            <h4  class="banners-extra__title title--main">Produtos Recomendados</h4>
+            <div class="product__related">
+                {% element 'snippets/showcase' {"products": product.related_products } %}
+            </div>
+        </section>
+    {% endif %}
+</div>
+
