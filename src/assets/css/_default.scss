@@ -663,11 +663,13 @@ button {
     img {
       position: relative;
       left: 50%;
-      max-width: 100%;
+      max-width: 120%;
       transform: translateX(-50%);
       width: auto;
+      height: 420px;
       @media (max-width: 992px) {
-        max-width: 110%;
+        max-width: 130%;
+        height: auto;
       }
     }
   }
