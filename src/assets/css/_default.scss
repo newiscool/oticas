@@ -664,11 +664,17 @@ button {
     img {
       position: relative;
       left: 50%;
-      max-width: 100%;
+      max-width: 120%;
       transform: translateX(-50%);
       width: auto;
+      height: 420px;
       @media (max-width: 992px) {
+<<<<<<< HEAD
         max-width: 145%;
+=======
+        max-width: 130%;
+        height: auto;
+>>>>>>> 767e529e2ecaa4f30425241beb3b3dc998633e90
       }
     }
   }
