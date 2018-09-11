@@ -1,21 +1,22 @@
-<section id="newsletter" class="newsletter">
-    <div class="newsletter__title">
-        <div class="newsletter__info">
-            <span>{{settings.ruler1}}</span>
-            <strong>{{settings.ruler2}}</strong>
+<section id="newsletter" >
+    <div class="newsletter">
+        <div class="newsletter_block">
+            <div class="newsletter__title">
+                <div class="newsletter__info">
+                    <span>{{settings.ruler1}}</span>
+                    <strong>{{settings.ruler2}}</strong>
+                </div>
+            </div>
+            <form action="{{ links.newsletter }}" class="newsletter__form" method="POST">
+                <input type="hidden" name="loja" value="{{ store.id }}">
+                <div class="input-box">
+                    <input name="nome" id="news-nome" type="text" class="newsletter__name newsletter__input" placeholder="Seu nome">
+                </div>
+                <div class="input-box">
+                    <input name="email" type="text" id="news-email" class="newsletter__email newsletter__input" placeholder="Seu e-mail">
+                </div>
+                <button type="input" class="newsletter__button">Cadastrar</button>
+            </form>
         </div>
     </div>
-    <!-- <p class="newsletter__sub">
-        Cadastre-se na nossa<br>Newsletter
-    </p> -->
-    <form action="{{ links.newsletter }}" class="newsletter__form" method="POST">
-        <input type="hidden" name="loja" value="{{ store.id }}">
-        <div class="input-box">
-            <input name="nome" id="news-nome" type="text" class="newsletter__name newsletter__input" placeholder="Seu nome">
-        </div>
-        <div class="input-box">
-            <input name="email" type="text" id="news-email" class="newsletter__email newsletter__input" placeholder="Seu e-mail">
-        </div>
-        <button type="input" class="newsletter__button">Quero me cadastrar</button>
-    </form>
 </section>

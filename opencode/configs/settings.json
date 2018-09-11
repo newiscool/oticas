@@ -8,12 +8,23 @@
       "instagram"   :   "",
       "email"       :   "email@oticasdesa.com.br",
 
-      "freeShipping": "Frete grátis",
-      "freeregion": "para sul e sudeste nas compras acima de R$199,99",
-      "freeShippingActived": "1",
-      "fretevalor": "200",
       "ruler1":"Cadastre-se e fique por",
       "ruler2":"dentro das novidades",
+      
+      "ruler3":"FRETE GRÁTIS",
+      "ruler4":"PARA SUL E SUDESTE NAS COMPRAS ACIMA DE R$199,99",
+
+      "ruler5":"Frete grátis",
+      "ruler5b":"Compras Acima De R$99",
+
+      "ruler6":"6X SEM JUROS",
+      "ruler6b":"Parcele Nos Cartões",
+      
+      "ruler7":"compras à vista",
+      "ruler7b":"20% de desconto!",
+
+      "ruler8":"",
+      "ruler8b":"",
   
       "marca-01": "",
       "marca-02": "",
@@ -49,18 +60,72 @@
       "ordem3": "rand",
       "showCase3active":"2",
       "categories3":"",
-
-      "chamadafrete":"Frete grátis",
-      "condicaofrete":"Compras Acima De R$99",
-
-      "chamadajuros":"6X SEM JUROS",
-      "condicaojuros":"Parcele Nos Cartões",
       
-      "chamadadesconto":"compras à vista",
-      "condicaodesconto":"20% de desconto!",
 
-      "chamadasobrealoja":"20 ANOS LOJÃO DO TONER",
-      "condicaosobrealoja":"Experiência No Segmento De Copiadoras"
+      "institucional01":"/quem-somos",
+      "institucional01nome":"Quem Somos",
+
+      "institucional02":"/loja-segura-privacidade",
+      "institucional02nome":"Loja Segura - Privacidade",
+
+      "institucional03":"",
+      "institucional03nome":"",
+
+      "institucional04":"",
+      "institucional04nome":"",
+
+      "institucional05":"",
+      "institucional05nome":"",
+
+      "institucional06":"",
+      "institucional06nome":"",
+
+      "institucional07":"",
+      "institucional07nome":"",
+
+      "duvidas01":"/central-de-ajuda",
+      "duvidas01nome":"Central de Ajuda",
+
+      "duvidas02":"/como-comprar",
+      "duvidas02nome":"Como Comprar",
+
+      "duvidas03":"/regras-de-frete",
+      "duvidas03nome":"Regras de Frete",
+
+      "duvidas04":"/envios-e-prazos",
+      "duvidas04nome":"Trocas e Devoluções!",
+
+      "duvidas05":"/pagamento",
+      "duvidas05nome":"Pagamentos",
+
+      "duvidas06":"",
+      "duvidas06nome":"",
+
+      "duvidas07":"",
+      "duvidas07nome":"",
+
+      "servicos01":"{{ links.account }}",
+      "servicos01nome":"Dados Pessoais",
+
+      "servicos02":"{{ links.orders }}",
+      "servicos02nome":"Meus Pedidos",
+
+      "servicos03":"{{ links.orders }}",
+      "servicos03nome":"Meus Pontos",
+
+      "servicos04":"/listas",
+      "servicos04nome":"Lista de Desejos!",
+
+      "servicos05":"{{links.register}}",
+      "servicos05nome":"Cadastre-se",
+
+      "servicos06":"",
+      "servicos06nome":"",
+
+      "servicos07":"",
+      "servicos07nome":"",
       
+      "aboutus":"<p>A Óticas de Sá nasceu com o compromisso de oferecer qualidade no atendimento e excelência na prestação de serviços. Selecionando produtos que atendem a todos os gostos, sempre prezando pela saúde dos olhos.</p> <p>Após 20 anos de experiência no ramo ótico, duas sócias se unem para apresentar a Marília uma ótica diferente. A ideia central é acima de tudo, cuidar da visão. Em meio a um mercado que consome pela beleza, a preocupação com a saúde visual foi o pilar para o surgimento desta empresa em 2013</p> <p>Sempre prezando pelo atendimento personalizado e a experiência de quem sabe tudo sobre lentes convecionais, digitais e free-form .A Óticas de Sá logo ganhou espaço no coração da cidade.</p> <p>A Óticas de Sá reuniu um repertório de grandes marcas. São lentes, armações, solares além de muitos acessórios. Sempre auxiliando na escolha e adptação para cada pessoa, com conforto e estilo.</p> <p>A saúde ocular é tratada com muita seriedade, e claro, sem deixar a beleza de lado. Nova, moderna e segura. Esta é a otica de Sá, onde a missão é levar saúde para os olhos.</p>"
+    
   }
 }

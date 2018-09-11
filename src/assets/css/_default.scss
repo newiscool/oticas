@@ -331,7 +331,7 @@ h1.color {
 
 .product__offer {
   position: absolute;
-  top: 5px;
+  top: -10px;
   right: 5px;
   height: 40px;
   width: 40px;
@@ -345,6 +345,7 @@ h1.color {
   font-size: 12px;
   line-height: 15px;
   border-radius: 50%;
+  z-index: 99;
 }
 .labels {
   margin-top: 5px;
@@ -667,7 +668,7 @@ button {
       transform: translateX(-50%);
       width: auto;
       @media (max-width: 992px) {
-        max-width: 110%;
+        max-width: 145%;
       }
     }
   }
