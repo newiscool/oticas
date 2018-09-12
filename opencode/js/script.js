@@ -208,22 +208,6 @@ jQuery(document).ready(function ($) {
         });
     };
 
-    /* Menu "sanduíche" no topo flutuante. */
-    // var $menuFloat = $('#header_bar .float-menu');
-    // var $navBar = $('#nav_bar');
-    //
-    // $menuFloat.on('click', function(){
-    //     $menuFloat.toggleClass("open");
-    //     $navBar.toggleClass("on");
-    // });
-    //
-    // var $btnOpen = $('#nav_bar .see-category');
-    // var $subCategories = $('#nav_bar .nv-01 .dropdown-switcher');
-    //
-    // $btnOpen.on('click', function(){
-    //     $subCategories.toggleClass("on");
-    // });
-
     jQuery('#foto_p').attr('data-target', "");
 
     if($('.smart_filter h3').eq(0).text() == "Categorias") {
@@ -353,13 +337,28 @@ jQuery(".search__triger").click(function () {
 jQuery(".close-icon-search").click(function () {
     jQuery(".search-block").removeClass("actived");
 }); 
+/*
+if (window.innerWidth < 992) {
 
+    jQuery( "svg.cat__icon.icon--arrow-bottom" ).on( "click", function() {
+        
+        jQuery(this).addClass("rotateDrop");        
+        if(jQuery(".dropdown-switcher").hasClass("active__dropdown")) {
+            jQuery(".dropdown-switcher").removeClass("active__dropdown");
+            jQuery("svg.cat__icon.icon--arrow-bottom").removeClass("rotateDrop");
+        } else {
+            jQuery(".dropdown-switcher").addClass("active__dropdown");
+        }
+    });
+}
+*/
 
-
-jQuery(".triger_btn-tabs").click(function () {    
-    var item = jQuery(this).closest('.dispblock');
+jQuery("svg.cat__icon.icon--arrow-bottom").click(function () { 
+    jQuery(this).addClass("rotateDrop");   
+       
+    var item = jQuery(this).closest('.dropdown-switcher');
     var hasOpen = !item.hasClass('drop');
-    jQuery('.dispblock').removeClass('drop');
+    jQuery('.dropdown-switcher').removeClass('drop');
     if(hasOpen) item.addClass("drop");
     else{ item.removeClass("drop") }
 

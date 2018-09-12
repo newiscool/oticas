@@ -19,11 +19,16 @@
     <div class="navbar-container">
         <ul class="nv-01">
             {% for category in categories %}
-            {% if loop.index <= 6 %}
+            {% if loop.index <= 5    %}
             <li class="cat_id-{{ category.id }} dropdown">
                 <a href="{{ category.link }}">
                     {{ category.name }}
                 </a>
+                {% if category.children %}
+                    <svg class="cat__icon icon--arrow-bottom hidden-lg hidden-md">
+                        <use xlink:href="#icon-arrow-bottom"></use>
+                    </svg>
+                {% endif %}
             
                 {% if category.children %}
                 <div class="dropdown-switcher">

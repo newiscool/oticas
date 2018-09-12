@@ -117,11 +117,16 @@
       }
   }
 
-  .footer__list-item{
-      align-items: center;
-      display: flex;
-      overflow: hidden;
-      transition: $transition;
+  .facebookplugin{
+      margin-top: 25px;
+  }
+
+    .footer__list-item{
+        display: flex;
+        overflow: hidden;
+        flex-flow: column;
+        transition: $transition;
+  
       a{
           display: block;
           cursor: pointer;

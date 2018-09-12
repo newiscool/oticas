@@ -17,9 +17,9 @@
   transform: translateX(-50%);
   margin: 30px 0;
 
-  @media (max-width: 1199px) {
+  @media (max-width: 992px) {
     margin-right: 0;
-    padding: 15px 0 25px;
+    padding: 0;
     margin-bottom: 15px;
   }
   .newsletter_brand {
@@ -45,7 +45,7 @@
     width: 100%;
     @media (max-width:992px){
       flex-wrap: wrap;
-      padding: 15px
+      padding: 5px 15px 10px;
     }
   }
 }
@@ -210,21 +210,25 @@
   outline: none;
   padding: 18px 20px 18px 45px;
   transition: all 150ms ease-in-out;
-
+  @media (max-width:992px){
+    font-size: 12px;
+  }
   ::placeholder {
     color: $dark-gray;
     font-style: italic;
   }
-
   &:hover {
     border-color: $light-gray;
   }
-
   &:focus {
     border-color: $cor01;
     font-style: normal;
   }
+@media (max-width:992px){
+  height: 35px;
+  padding: 0 20px;
 
+  }
 }
 
 .promotions-lane {
@@ -245,8 +249,9 @@
   position: absolute;
   right: 13px;
   height: 44px;
-  @media(max-width: 680px){
+  @media(max-width: 992px){
     position: initial;
+    height: 35px;
   }
 
 }
