@@ -353,6 +353,15 @@ if (window.innerWidth < 992) {
 }
 */
 
+jQuery(".triger_btn-tabs").click(function () {    
+    var item = jQuery(this).closest('.dispblock');
+    var hasOpen = !item.hasClass('drop');
+    jQuery('.dispblock').removeClass('drop');
+    if(hasOpen) item.addClass("drop");
+    else{ item.removeClass("drop") }
+
+});
+
 jQuery("svg.cat__icon.icon--arrow-bottom").click(function () { 
     jQuery(this).addClass("rotateDrop");   
        

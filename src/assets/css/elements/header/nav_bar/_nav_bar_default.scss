@@ -4,7 +4,7 @@
   transition: all 150ms ease-in-out;
   z-index: 100;
   flex: 0 0 62%;
-  padding-left: 32px;
+  padding: 0 85px;
 
   @media(max-width: 1199px) {
     .nav-cabecalho-mobile-wrapper {
@@ -65,9 +65,8 @@
       display: flex;
       align-items: center;
       flex-wrap: wrap; 
-      border-bottom: 1px solid;
-
       @media(max-width: 992px) {
+        border-bottom: 1px solid;
         svg {
           fill: $dark-gray;
           flex: 0 0 auto;
@@ -267,11 +266,13 @@
       padding: 0;
       text-align: left;
       position: relative;
-      min-width: 230px;
-      height: 40px;
-      border: 1px solid #fff;
-      background: $light-gray;
-      align-items: center;
+      @media (max-width:992px){        
+        min-width: 230px;
+        height: 40px;
+        border: 1px solid #fff;
+        background: $light-gray;
+        align-items: center;
+      }
 
       &:hover {
         > a {

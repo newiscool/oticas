@@ -19,7 +19,7 @@
     <div class="navbar-container">
         <ul class="nv-01">
             {% for category in categories %}
-            {% if loop.index <= 5    %}
+            {% if loop.index <= 4    %}
             <li class="cat_id-{{ category.id }} dropdown">
                 <a href="{{ category.link }}">
                     {{ category.name }}
