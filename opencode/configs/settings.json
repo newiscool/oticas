@@ -62,7 +62,7 @@
       "categories3":"",
       
 
-      "institucional01":"/quem-somos",
+      "institucional01":"{{ links.company }}",
       "institucional01nome":"Quem Somos",
 
       "institucional02":"/loja-segura-privacidade",
