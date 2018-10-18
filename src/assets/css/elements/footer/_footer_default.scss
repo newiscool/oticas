@@ -124,7 +124,6 @@
     .footer__list-item{
         display: flex;
         overflow: hidden;
-        flex-flow: column;
         transition: $transition;
   
       a{
@@ -148,8 +147,11 @@
           // padding: 0 20px;
           justify-content: space-between;
           max-width: 250px;
+          flex-wrap: wrap;
           span{
               margin: 5px 0;
+              display: flex;
+              flex-wrap: wrap;
           }
           em{
               font-size: 13px;
@@ -158,6 +160,7 @@
               font-style: normal;
               color: #7d7d7d;
               display: block;
+              width: 100%;
           }
           strong{
               display: block;
@@ -379,5 +382,6 @@
     font-size: 15px;
     line-height: normal;
     padding: 0 15px;
+    text-align: left;
   }
 }

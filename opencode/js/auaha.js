@@ -1873,7 +1873,7 @@ var shouldBeReleasedProperties = ['dispatchConfig', '_targetInst', 'nativeEvent'
 
 /**
  * @interface Event
- * @see http://www.w3.org/TR/DOM-Level-3-Events/
+ * @see https://www.w3.org/TR/DOM-Level-3-Events/
  */
 var EventInterface = {
   type: null,
@@ -4122,7 +4122,7 @@ var getEventTarget = __webpack_require__(81);
 
 /**
  * @interface UIEvent
- * @see http://www.w3.org/TR/DOM-Level-3-Events/
+ * @see https://www.w3.org/TR/DOM-Level-3-Events/
  */
 var UIEventInterface = {
   view: function (event) {
@@ -5081,7 +5081,7 @@ var getEventModifierState = __webpack_require__(83);
 
 /**
  * @interface MouseEvent
- * @see http://www.w3.org/TR/DOM-Level-3-Events/
+ * @see https://www.w3.org/TR/DOM-Level-3-Events/
  */
 var MouseEventInterface = {
   screenX: null,
@@ -6644,7 +6644,7 @@ module.exports = isEventSupported;
 
 /**
  * Translation from modifier key to the associated property in the event.
- * @see http://www.w3.org/TR/DOM-Level-3-Events/#keys-Modifiers
+ * @see https://www.w3.org/TR/DOM-Level-3-Events/#keys-Modifiers
  */
 
 var modifierKeyToProp = {
@@ -6919,9 +6919,9 @@ module.exports = DOMChildrenOperations;
 
 
 var DOMNamespaces = {
-  html: 'http://www.w3.org/1999/xhtml',
-  mathml: 'http://www.w3.org/1998/Math/MathML',
-  svg: 'http://www.w3.org/2000/svg'
+  html: 'https://www.w3.org/1999/xhtml',
+  mathml: 'https://www.w3.org/1998/Math/MathML',
+  svg: 'https://www.w3.org/2000/svg'
 };
 
 module.exports = DOMNamespaces;
@@ -17221,7 +17221,7 @@ function extractBeforeInputEvent(topLevelType, targetInst, nativeEvent, nativeEv
 
 /**
  * Create an `onBeforeInput` event to match
- * http://www.w3.org/TR/2013/WD-DOM-Level-3-Events-20131105/#events-inputevents.
+ * https://www.w3.org/TR/2013/WD-DOM-Level-3-Events-20131105/#events-inputevents.
  *
  * This event plugin is based on the native `textInput` event
  * available in Chrome, Safari, Opera, and IE. This event fires after
@@ -17364,7 +17364,7 @@ var SyntheticEvent = __webpack_require__(16);
 
 /**
  * @interface Event
- * @see http://www.w3.org/TR/DOM-Level-3-Events/#events-compositionevents
+ * @see https://www.w3.org/TR/DOM-Level-3-Events/#events-compositionevents
  */
 var CompositionEventInterface = {
   data: null
@@ -17403,7 +17403,7 @@ var SyntheticEvent = __webpack_require__(16);
 
 /**
  * @interface Event
- * @see http://www.w3.org/TR/2013/WD-DOM-Level-3-Events-20131105
+ * @see https://www.w3.org/TR/2013/WD-DOM-Level-3-Events-20131105
  *      /#events-inputevents
  */
 var InputEventInterface = {
@@ -19143,7 +19143,7 @@ var selectWrap = [1, '<select multiple="true">', '</select>'];
 var tableWrap = [1, '<table>', '</table>'];
 var trWrap = [3, '<table><tbody><tr>', '</tr></tbody></table>'];
 
-var svgWrap = [1, '<svg xmlns="http://www.w3.org/2000/svg">', '</svg>'];
+var svgWrap = [1, '<svg xmlns="https://www.w3.org/2000/svg">', '</svg>'];
 
 var markupWrap = {
   '*': [1, '?<div>', '</div>'],
@@ -19578,7 +19578,7 @@ var voidElementTags = _assign({
 
 // We accept any tag to be rendered but since this gets injected into arbitrary
 // HTML, we want to make sure that it's a safe tag.
-// http://www.w3.org/TR/REC-xml/#NT-Name
+// https://www.w3.org/TR/REC-xml/#NT-Name
 
 var VALID_TAG_REGEX = /^[a-zA-Z][a-zA-Z:_\.\-\d]*$/; // Simplified subset
 var validatedTagCache = {};
@@ -19910,11 +19910,11 @@ ReactDOMComponent.Mixin = {
       // a newline specifically to get eaten by the parser. (Alternately for
       // textareas, replacing "^\n" with "\r\n" doesn't get eaten, and the first
       // \r is normalized out by HTMLTextAreaElement#value.)
-      // See: <http://www.w3.org/TR/html-polyglot/#newlines-in-textarea-and-pre>
-      // See: <http://www.w3.org/TR/html5/syntax.html#element-restrictions>
-      // See: <http://www.w3.org/TR/html5/syntax.html#newlines>
+      // See: <https://www.w3.org/TR/html-polyglot/#newlines-in-textarea-and-pre>
+      // See: <https://www.w3.org/TR/html5/syntax.html#element-restrictions>
+      // See: <https://www.w3.org/TR/html5/syntax.html#newlines>
       // See: Parsing of "textarea" "listing" and "pre" elements
-      //  from <http://www.w3.org/TR/html5/syntax.html#parsing-main-inbody>
+      //  from <https://www.w3.org/TR/html5/syntax.html#parsing-main-inbody>
       return '\n' + ret;
     } else {
       return ret;
@@ -21002,7 +21002,7 @@ function isControlled(props) {
  * The rendered element will be initialized as unchecked (or `defaultChecked`)
  * with an empty value (or `defaultValue`).
  *
- * @see http://www.w3.org/TR/2012/WD-html5-20121025/the-input-element.html
+ * @see https://www.w3.org/TR/2012/WD-html5-20121025/the-input-element.html
  */
 var ReactDOMInput = {
   getHostProps: function (inst, props) {
@@ -24829,8 +24829,8 @@ module.exports = isNode;
 
 
 var NS = {
-  xlink: 'http://www.w3.org/1999/xlink',
-  xml: 'http://www.w3.org/XML/1998/namespace'
+  xlink: 'https://www.w3.org/1999/xlink',
+  xml: 'https://www.w3.org/XML/1998/namespace'
 };
 
 // We use attributes for everything SVG so let's avoid some duplication and run
@@ -25433,7 +25433,7 @@ var SimpleEventPlugin = {
       case 'topVolumeChange':
       case 'topWaiting':
         // HTML Events
-        // @see http://www.w3.org/TR/html5/index.html#events-0
+        // @see https://www.w3.org/TR/html5/index.html#events-0
         EventConstructor = SyntheticEvent;
         break;
       case 'topKeyPress':
@@ -25558,7 +25558,7 @@ var SyntheticEvent = __webpack_require__(16);
 
 /**
  * @interface Event
- * @see http://www.w3.org/TR/css3-animations/#AnimationEvent-interface
+ * @see https://www.w3.org/TR/css3-animations/#AnimationEvent-interface
  * @see https://developer.mozilla.org/en-US/docs/Web/API/AnimationEvent
  */
 var AnimationEventInterface = {
@@ -25600,7 +25600,7 @@ var SyntheticEvent = __webpack_require__(16);
 
 /**
  * @interface Event
- * @see http://www.w3.org/TR/clipboard-apis/
+ * @see https://www.w3.org/TR/clipboard-apis/
  */
 var ClipboardEventInterface = {
   clipboardData: function (event) {
@@ -25641,7 +25641,7 @@ var SyntheticUIEvent = __webpack_require__(45);
 
 /**
  * @interface FocusEvent
- * @see http://www.w3.org/TR/DOM-Level-3-Events/
+ * @see https://www.w3.org/TR/DOM-Level-3-Events/
  */
 var FocusEventInterface = {
   relatedTarget: null
@@ -25684,7 +25684,7 @@ var getEventModifierState = __webpack_require__(83);
 
 /**
  * @interface KeyboardEvent
- * @see http://www.w3.org/TR/DOM-Level-3-Events/
+ * @see https://www.w3.org/TR/DOM-Level-3-Events/
  */
 var KeyboardEventInterface = {
   key: getEventKey,
@@ -25882,7 +25882,7 @@ var SyntheticMouseEvent = __webpack_require__(59);
 
 /**
  * @interface DragEvent
- * @see http://www.w3.org/TR/DOM-Level-3-Events/
+ * @see https://www.w3.org/TR/DOM-Level-3-Events/
  */
 var DragEventInterface = {
   dataTransfer: null
@@ -25923,7 +25923,7 @@ var getEventModifierState = __webpack_require__(83);
 
 /**
  * @interface TouchEvent
- * @see http://www.w3.org/TR/touch-events/
+ * @see https://www.w3.org/TR/touch-events/
  */
 var TouchEventInterface = {
   touches: null,
@@ -25969,7 +25969,7 @@ var SyntheticEvent = __webpack_require__(16);
 
 /**
  * @interface Event
- * @see http://www.w3.org/TR/2009/WD-css3-transitions-20090320/#transition-events-
+ * @see https://www.w3.org/TR/2009/WD-css3-transitions-20090320/#transition-events-
  * @see https://developer.mozilla.org/en-US/docs/Web/API/TransitionEvent
  */
 var TransitionEventInterface = {
@@ -26011,7 +26011,7 @@ var SyntheticMouseEvent = __webpack_require__(59);
 
 /**
  * @interface WheelEvent
- * @see http://www.w3.org/TR/DOM-Level-3-Events/
+ * @see https://www.w3.org/TR/DOM-Level-3-Events/
  */
 var WheelEventInterface = {
   deltaX: function (event) {
@@ -28408,7 +28408,7 @@ var quickview = function (_Component) {
                             }, className: 'quickview__button quickview__button--close' },
                         __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
                             'svg',
-                            { xmlns: 'http://www.w3.org/2000/svg', viewBox: '298 388 16 16' },
+                            { xmlns: 'https://www.w3.org/2000/svg', viewBox: '298 388 16 16' },
                             ' ',
                             __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement('path', { d: 'M307.416,395.993l1.414-1.414c0.196-0.196,0.196-0.512,0-0.707l-0.707-0.707 c-0.195-0.195-0.511-0.196-0.707,0l-1.414,1.414l-1.414-1.413c-0.196-0.196-0.512-0.196-0.708-0.001l-0.707,0.707 c-0.195,0.195-0.195,0.512,0.001,0.708l1.414,1.414l-1.411,1.411c-0.195,0.195-0.195,0.512,0,0.707l0.707,0.707 c0.196,0.195,0.512,0.196,0.707,0l1.411-1.41l1.421,1.421c0.196,0.196,0.513,0.196,0.708,0.001l0.707-0.707 c0.195-0.195,0.195-0.513,0-0.708L307.416,395.993z M306,388c-4.418,0-8,3.582-8,8s3.582,8,8,8c4.419,0,8-3.582,8-8 C314,391.582,310.419,388,306,388z M306,402.499c-3.59,0-6.5-2.91-6.5-6.5c0-3.59,2.91-6.5,6.5-6.5s6.5,2.91,6.5,6.5 C312.5,399.589,309.59,402.499,306,402.499z' }),
                             ' '
@@ -28472,7 +28472,7 @@ var quickview = function (_Component) {
                             }, className: 'quickview__button quickview__button--close' },
                         __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
                             'svg',
-                            { xmlns: 'http://www.w3.org/2000/svg', viewBox: '0 0 100 100' },
+                            { xmlns: 'https://www.w3.org/2000/svg', viewBox: '0 0 100 100' },
                             __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
                                 'title',
                                 null,
@@ -30251,7 +30251,7 @@ var remove = function (_Component) {
                     } },
                 __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
                     'svg',
-                    { xmlns: 'http://www.w3.org/2000/svg', viewBox: '0 0 22 30' },
+                    { xmlns: 'https://www.w3.org/2000/svg', viewBox: '0 0 22 30' },
                     __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
                         'title',
                         null,

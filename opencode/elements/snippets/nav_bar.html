@@ -19,9 +19,9 @@
     <div class="navbar-container">
         <ul class="nv-01">
             {% for category in categories %}
-            {% if loop.index <= 4    %}
+            {% if loop.index <= 5 %}
             <li class="cat_id-{{ category.id }} dropdown">
-                <a href="{{ category.link }}">
+                <a href="{{ category.link }}" class="btn-dropdown">
                     {{ category.name }}
                 </a>
                 {% if category.children %}
@@ -51,11 +51,20 @@
                                 {% endif %}
                             </li>
                             {% endfor %}
+                            <li class="dropdown">
+                                {% if utils.is_mobile %}
+                                <a href="{{ category.link }}" class="link-vertodos">
+                                    <span>Ver todos: {{ category.name }}</span>
+                                </a>
+                                {% endif %}
+                            </li>
                         </ul>
                     </div>
+                   
                 </div>
                 {% endif %}
             </li>
+         
             {% endif %}
             {% endfor %}
         </ul>

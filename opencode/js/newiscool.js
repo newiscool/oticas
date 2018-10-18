@@ -28407,7 +28407,7 @@ var quickview = function (_Component) {
                             }, className: 'quickview__button quickview__button--close' },
                         __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
                             'svg',
-                            { xmlns: 'http://www.w3.org/2000/svg', viewBox: '298 388 16 16' },
+                            { xmlns: 'https://www.w3.org/2000/svg', viewBox: '298 388 16 16' },
                             ' ',
                             __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement('path', { d: 'M307.416,395.993l1.414-1.414c0.196-0.196,0.196-0.512,0-0.707l-0.707-0.707 c-0.195-0.195-0.511-0.196-0.707,0l-1.414,1.414l-1.414-1.413c-0.196-0.196-0.512-0.196-0.708-0.001l-0.707,0.707 c-0.195,0.195-0.195,0.512,0.001,0.708l1.414,1.414l-1.411,1.411c-0.195,0.195-0.195,0.512,0,0.707l0.707,0.707 c0.196,0.195,0.512,0.196,0.707,0l1.411-1.41l1.421,1.421c0.196,0.196,0.513,0.196,0.708,0.001l0.707-0.707 c0.195-0.195,0.195-0.513,0-0.708L307.416,395.993z M306,388c-4.418,0-8,3.582-8,8s3.582,8,8,8c4.419,0,8-3.582,8-8 C314,391.582,310.419,388,306,388z M306,402.499c-3.59,0-6.5-2.91-6.5-6.5c0-3.59,2.91-6.5,6.5-6.5s6.5,2.91,6.5,6.5 C312.5,399.589,309.59,402.499,306,402.499z' }),
                             ' '
@@ -28471,7 +28471,7 @@ var quickview = function (_Component) {
                             }, className: 'quickview__button quickview__button--close' },
                         __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
                             'svg',
-                            { xmlns: 'http://www.w3.org/2000/svg', viewBox: '0 0 100 100' },
+                            { xmlns: 'https://www.w3.org/2000/svg', viewBox: '0 0 100 100' },
                             __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
                                 'title',
                                 null,
@@ -30250,7 +30250,7 @@ var remove = function (_Component) {
                     } },
                 __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
                     'svg',
-                    { xmlns: 'http://www.w3.org/2000/svg', viewBox: '0 0 22 30' },
+                    { xmlns: 'https://www.w3.org/2000/svg', viewBox: '0 0 22 30' },
                     __WEBPACK_IMPORTED_MODULE_5_react___default.a.createElement(
                         'title',
                         null,

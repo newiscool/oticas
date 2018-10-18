@@ -174,8 +174,6 @@
 
   @media (max-width: 991px) {
     padding: 0 !important;
-    position: fixed;
-    z-index: 999;
     width: 100%;
     bottom: 0;
     left: 0;
@@ -222,7 +220,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100%;
   }
 }
@@ -523,11 +521,12 @@ label.filtros.filtro-ordem {
 
 select#select_ordem {
   height: 30px;
-  border: 1px solid #e8e8e8;
+  border: 1px solid $dark-gray;
   padding-left: 10px;
   border-radius: 1px;
   font-weight: 400;
   text-shadow: 0 0;
+  color: $cor02;
 }
 
 .catalogo-pages {
@@ -541,6 +540,13 @@ select#select_ordem {
     justify-content:  center;
     font-size: 18px;
     margin: 5px 2px;
+    a{
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
   .page-next, .page-first, .page-previous, .page-last {
     border: none;

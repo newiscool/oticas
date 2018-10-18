@@ -158,7 +158,7 @@ class quickview extends Component {
         return <section onClick={event =>{ this.close(event) }} aria-hidden={!this.state.visible} className="quickview" id="quickview" >
             {this.props.isFinish || <div className="quickview__container">
                 <button onClick={event =>{ this.close(event) }} className="quickview__button quickview__button--close">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="298 388 16 16"> <path d="M307.416,395.993l1.414-1.414c0.196-0.196,0.196-0.512,0-0.707l-0.707-0.707 c-0.195-0.195-0.511-0.196-0.707,0l-1.414,1.414l-1.414-1.413c-0.196-0.196-0.512-0.196-0.708-0.001l-0.707,0.707 c-0.195,0.195-0.195,0.512,0.001,0.708l1.414,1.414l-1.411,1.411c-0.195,0.195-0.195,0.512,0,0.707l0.707,0.707 c0.196,0.195,0.512,0.196,0.707,0l1.411-1.41l1.421,1.421c0.196,0.196,0.513,0.196,0.708,0.001l0.707-0.707 c0.195-0.195,0.195-0.513,0-0.708L307.416,395.993z M306,388c-4.418,0-8,3.582-8,8s3.582,8,8,8c4.419,0,8-3.582,8-8 C314,391.582,310.419,388,306,388z M306,402.499c-3.59,0-6.5-2.91-6.5-6.5c0-3.59,2.91-6.5,6.5-6.5s6.5,2.91,6.5,6.5 C312.5,399.589,309.59,402.499,306,402.499z"/> </svg>
+                <svg xmlns="https://www.w3.org/2000/svg" viewBox="298 388 16 16"> <path d="M307.416,395.993l1.414-1.414c0.196-0.196,0.196-0.512,0-0.707l-0.707-0.707 c-0.195-0.195-0.511-0.196-0.707,0l-1.414,1.414l-1.414-1.413c-0.196-0.196-0.512-0.196-0.708-0.001l-0.707,0.707 c-0.195,0.195-0.195,0.512,0.001,0.708l1.414,1.414l-1.411,1.411c-0.195,0.195-0.195,0.512,0,0.707l0.707,0.707 c0.196,0.195,0.512,0.196,0.707,0l1.411-1.41l1.421,1.421c0.196,0.196,0.513,0.196,0.708,0.001l0.707-0.707 c0.195-0.195,0.195-0.513,0-0.708L307.416,395.993z M306,388c-4.418,0-8,3.582-8,8s3.582,8,8,8c4.419,0,8-3.582,8-8 C314,391.582,310.419,388,306,388z M306,402.499c-3.59,0-6.5-2.91-6.5-6.5c0-3.59,2.91-6.5,6.5-6.5s6.5,2.91,6.5,6.5 C312.5,399.589,309.59,402.499,306,402.499z"/> </svg>
                 </button>
 
                 <Images images={this.props.images} />
@@ -195,7 +195,7 @@ class quickview extends Component {
             </div>}
             {!this.props.isFinish || <div className="quickview__container quickview__finish">
                 <button onClick={event =>{ this.close(event) }} className="quickview__button quickview__button--close">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><title>close</title><g id="Camada_2" data-name="Camada 2"><g id="Layer_1" data-name="Layer 1"><path d="M75.19,50,98.68,26.51a4.51,4.51,0,0,0,0-6.38L79.87,1.32a4.51,4.51,0,0,0-6.38,0L50,24.81,26.51,1.32a4.51,4.51,0,0,0-6.38,0L1.32,20.13a4.51,4.51,0,0,0,0,6.38L24.81,50,1.32,73.49a4.51,4.51,0,0,0,0,6.38L20.13,98.68a4.51,4.51,0,0,0,6.38,0L50,75.19,73.49,98.68a4.51,4.51,0,0,0,6.38,0L98.68,79.87a4.51,4.51,0,0,0,0-6.38Z"/></g></g></svg>
+                    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 100 100"><title>close</title><g id="Camada_2" data-name="Camada 2"><g id="Layer_1" data-name="Layer 1"><path d="M75.19,50,98.68,26.51a4.51,4.51,0,0,0,0-6.38L79.87,1.32a4.51,4.51,0,0,0-6.38,0L50,24.81,26.51,1.32a4.51,4.51,0,0,0-6.38,0L1.32,20.13a4.51,4.51,0,0,0,0,6.38L24.81,50,1.32,73.49a4.51,4.51,0,0,0,0,6.38L20.13,98.68a4.51,4.51,0,0,0,6.38,0L50,75.19,73.49,98.68a4.51,4.51,0,0,0,6.38,0L98.68,79.87a4.51,4.51,0,0,0,0-6.38Z"/></g></g></svg>
                 </button>
                 <div className="quckview__actions">
                     <button onClick={event =>{ this.close(event) }} className="quickview__button quickview__button--continue" type="button">Continuar Comprando</button>

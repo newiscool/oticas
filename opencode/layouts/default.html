@@ -56,17 +56,15 @@
         <main class="main">
             {% if pages.current == 'home' and banner.home %}
                 <section id="full-banner">{{ banner.home }}</section>
-            {% endif %}
-            {% if pages.current == 'home' or pages.current == 'catalog' %}
-                {% element 'snippets/newsletter' %}
-            {% endif %}
+            {% endif %}       
             
             <div class="container">
-                {% if pages.current == 'product' or pages.current == 'catalog' %}
+                {% if pages.current ==  'catalog' %}
                     {% element 'snippets/breadcrumb' %}
                 {% endif %}
-                {{ content_for_layout }}
+                
             </div>
+            {{ content_for_layout }}
         </main>
 
         {% element 'footer' %}

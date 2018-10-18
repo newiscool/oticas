@@ -257,8 +257,12 @@
   ul.nv-02 {
     flex: 1 1 auto;
     display: block;
+    max-height: 370px;
+    overflow-y: scroll;
   }
-
+  .rotateDrop svg{
+    transform: rotate(0);
+  }
   .nv-02 {
     > li {
       display: flex;
@@ -266,8 +270,8 @@
       padding: 0;
       text-align: left;
       position: relative;
-      @media (max-width:992px){        
-        min-width: 230px;
+      @media (max-width:992px){       
+        min-width: 265px;
         height: 40px;
         border: 1px solid #fff;
         background: $light-gray;
@@ -426,6 +430,7 @@
     justify-content: flex-start;
     height: 50px;
     width: 80%;
+    pointer-events: none;
   }
 
   .you-need__list {

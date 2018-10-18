@@ -278,20 +278,17 @@ jQuery( document ).ready(function() {
 
 jQuery( document ).ready(function() {
     if (window.innerWidth < 992) {
-
-        jQuery( "svg.cat__icon.icon--arrow-bottom" ).on( "click", function() {
-            
+        jQuery( ".dropdown" ).on( "click", function() {
             jQuery(this).addClass("rotateDrop");
-            
             if(jQuery(".dropdown-switcher").hasClass("active__dropdown")) {
                 jQuery(".dropdown-switcher").removeClass("active__dropdown");
-                jQuery("svg.cat__icon.icon--arrow-bottom").removeClass("rotateDrop");
+                jQuery(".dropdown").removeClass("rotateDrop");
             } else {
                 jQuery(".dropdown-switcher").addClass("active__dropdown");
             }
-
         });
     }
+    
 
     jQuery("#avalieClick").on( "click", function() {
         jQuery("#ProdAbas ul li").removeClass("aberta"); 

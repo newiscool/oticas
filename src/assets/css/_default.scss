@@ -265,7 +265,7 @@ form {
 
   &::after {
     background: $light-gray;
-    bottom: 60%;
+    bottom: 0%;
     left: 0;
     content: '';
     display: block;
@@ -649,6 +649,8 @@ button {
 
 
 #full-banner {
+  margin-bottom: 50px;
+  
   .owl-carousel .owl-item {
     overflow: hidden;
 
@@ -670,7 +672,9 @@ button {
       }
     }
   }
-
+  @media (max-width:992px){
+    margin-bottom: 20px;
+  }
 }
 
 .banners-extras {
